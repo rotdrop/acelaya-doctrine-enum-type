@@ -74,7 +74,7 @@ class PhpEnumType extends Type
      * @param mixed $value
      * @return mixed
      */
-    public function convertToDatabaseValue($value, AbstractPlatform $platform)
+    public function convertToDatabaseValue(mixed $value, AbstractPlatform $platform): mixed
     {
         if ($value === null) {
             return null;
