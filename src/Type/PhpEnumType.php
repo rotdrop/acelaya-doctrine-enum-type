@@ -39,7 +39,7 @@ class PhpEnumType extends Type
      * @return mixed
      * @throws InvalidArgumentException
      */
-    public function convertToPHPValue($value, AbstractPlatform $platform) // phpcs:ignore
+    public function convertToPHPValue(mixed $value, AbstractPlatform $platform): mixed
     {
         if ($value === null) {
             return null;
